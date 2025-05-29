@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+    <GridLayout
+        android:id="@+id/grid_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="false"
+        android:padding="0dp">
+
+        <Button android:id="@+id/Addition" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="Сложение" android:textSize="11sp"/>
+        <Button android:id="@+id/HalfAngle" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="Половинного" android:textSize="11sp"/>
+        <Button android:id="@+id/DoubleAngle" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="2 угла" android:textSize="11sp"/>
+        <Button android:id="@+id/SumToProduct" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="Сумма" android:textSize="11sp"/>
+        <Button android:id="@+id/ProductToSum" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="Произведение" android:textSize="11sp"/>
+        <Button android:id="@+id/TripleAngle" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="3 угла" android:textSize="11sp"/>
+        <Button android:id="@+id/Subtraction" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="Вычитание" android:textSize="11sp"/>
+        <Button android:id="@+id/Reduction" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_columnWeight="1" android:layout_margin="2dp" android:text="Приведения" android:textSize="11sp"/>
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
